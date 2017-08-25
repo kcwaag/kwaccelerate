@@ -15,20 +15,6 @@
 get_header(); ?>
 
 	<div id="primary" class="home-page hero-content">
-		<section class="recent-posts">
- 			<div class="site-content">
-			<div class="blog-post">
-				<h4>From the Blog</h4>
-		<!--QUERY FOR MOST RECENT BLOG POST -->
-		<?php query_posts('posts_per_page=1'); ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-       <h3><?php the_title(); ?></h3>
-       <?php the_excerpt(); ?>
-     	<?php endwhile; ?>
-    <?php wp_reset_query(); ?>
-			</div>
- 			</div>
-		</section>
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
@@ -36,5 +22,20 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
+
+	<section class="recent-posts">
+		<div class="site-content">
+		<div class="blog-post">
+			<h4>From the Blog</h4>
+	<!--QUERY FOR MOST RECENT BLOG POST -->
+	<?php query_posts('posts_per_page=1'); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+		 <h2><?php the_title(); ?></h2>
+		 <?php the_excerpt(); ?>
+		<?php endwhile; ?>
+	<?php wp_reset_query(); ?>
+		</div>
+		</div>
+	</section>
 
 <?php get_footer(); ?>

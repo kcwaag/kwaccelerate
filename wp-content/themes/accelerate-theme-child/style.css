@@ -24,27 +24,35 @@
     font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
 	   background: #45ac9d;
 }
+/* blog posts on homepage*/
+
+.recent-posts {
+  overflow: hidden;
+}
 
 .blog-post {
-	width: 50%;
+	width: 44.75%;
+  padding-right: 50px;
 	float: left;
-	margin-bottom: 2em;
+  text-align: justify;
+
 }
 
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font: 16px 'Montserrat';
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+    margin-top: 0;
 }
 
-.blog-post h3 {
-	font-size: 1.5em;
+.blog-post h2 {
+	font-size: 700 24px 'Montserrat';
+  margin: 36px 0;
 }
 
-.read-more-link {
+.blog-post .read-more-link {
 	font-family: 'Montserrat';
-	font-weight: 700;
+	font-weight: 700 15px;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
