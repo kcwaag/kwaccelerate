@@ -57,6 +57,41 @@
 	text-transform: uppercase;
 }
 
+/* Homepage Featured Work */
+
+.featured-work h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.03em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3a3939;
+  margin: 0 0 5% 0;
+}
+.featured-work h3 {
+  font-weight: normal;
+}
+
+.featured-work .site-content {
+  display: block;
+}
+
+.individual-featured-work {
+  display: inline-block;
+}
+
+li {
+  float: left;
+  width: 30%;
+  margin: 0 1.5% 5% 1.5%;
+}
+
+.individual-featured-work h3{
+  text-align: center;
+  margin-top: 4%;
+
+}
+
 /* Case Studies */
 
 aside.case-study-sidebar {

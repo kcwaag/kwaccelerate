@@ -24,7 +24,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<section class= "featured-work">
-		<div class="site-content">
+		<div class="site-content clearfix">
 				<h4>Featured Work</h4>
 
 				<ul class="homepage-featured-work">
@@ -33,9 +33,9 @@ get_header(); ?>
 						  $image_1 = get_field("image_1");
 							$size = "medium";
 					?>
+					<li class="individual-featured-work">
 							<figure>
-							<?php echo wp_get_attachment_image($image_1, $size); ?>
-						<li class="individual-featured-work">
+								<?php echo wp_get_attachment_image($image_1, $size); ?>
 							</figure>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<?php endwhile; ?>
