@@ -33,11 +33,11 @@ get_header(); ?>
 
               <?php the_excerpt(); ?>
 
-              <p class="read-more-link"><a href="<?php echo $client; ?>">View Project ›</a></p>
+              <p class="read-more-link"><a href="<?php the_permalink(); ?>">View Project ›</a></p>
           </aside>
 
           <div class="case-study-images">
-               <a href="<?php echo $client; ?>"</a>
+               <a href="<?php the_permalink(); ?>"</a>
                <?php if($image_1) {
                echo wp_get_attachment_image( $image_1, $size );
                 } ?>

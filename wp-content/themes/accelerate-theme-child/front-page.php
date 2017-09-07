@@ -23,6 +23,7 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
+
 	<section class= "featured-work">
 		<div class="site-content clearfix">
 				<h4>Featured Work</h4>
