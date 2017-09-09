@@ -39,3 +39,13 @@
      );
  }
  add_action( 'init', 'create_custom_post_types' );
+
+ //Add body class
+
+function accelerate_child_body_classes( $classes ) {
+ if ( is_page( 'contact-us' ) ) {
+   $classes[] = 'contact-page';
+ }
+ return $classes;
+}
+add_filter( 'body_class','accelerate_child_body_classes' );

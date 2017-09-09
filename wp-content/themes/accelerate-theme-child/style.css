@@ -150,3 +150,39 @@ div.case-study-images img {
 .case-study{
   margin-bottom: 10%;
 }
+
+/* Contact Form */
+
+.contact-page .main-content {
+  width: 30%;
+}
+
+.contact-us h2 {
+  font-family: 'Montserrat';
+  font-size: 1.56em;
+}
+
+div.nf-form-content{
+  font-size: 1.123em;
+}
+
+#nf-field-1-container, #nf-field-2-container {
+  width: 47.5%;
+  display: inline-block;
+}
+
+#nf-field-1-container {
+  margin-right: 2%;
+}
+
+#nf-field-2-container {
+  margin-left: 2%;
+}
+
+#nf-field-4-container {
+  float: right;
+}
+
+.field-wrap button, .field-wrap input[type=button], .field-wrap input[type=submit]{
+  background-color: #45ac9d;
+}
