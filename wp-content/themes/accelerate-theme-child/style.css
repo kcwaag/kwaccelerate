@@ -154,7 +154,10 @@ div.case-study-images img {
 /* Contact Form */
 
 .contact-page .main-content {
-  width: 30%;
+  width: 70%;
+  margin: auto;
+  flex-grow: 0;
+  max-width: 38em;
 }
 
 .contact-us h2 {
@@ -185,4 +188,13 @@ div.nf-form-content{
 
 .field-wrap button, .field-wrap input[type=button], .field-wrap input[type=submit]{
   background-color: #45ac9d;
+}
+
+/* Contact Confirmation */
+
+.nf-response-msg p {
+  font-size: 2em;
+  color: #45ac9d;
+  font-weight: bold;
+  text-align: center;
 }
