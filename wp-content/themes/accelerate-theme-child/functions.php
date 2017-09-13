@@ -37,6 +37,18 @@
              'rewrite' => array( 'slug' => 'case-studies' ),
          )
      );
+     register_post_type( 'our_services',
+         array(
+             'labels' => array(
+                 'name' => __( 'Our Services' ),
+                 'singular_name' => __( 'Our Services' )
+             ),
+             'public' => true,
+             'has_archive' => false,
+             'rewrite' => array( 'slug' => 'our-services' ),
+         )
+     );
+
  }
  add_action( 'init', 'create_custom_post_types' );
 

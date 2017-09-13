@@ -198,3 +198,37 @@ div.nf-form-content{
   font-weight: bold;
   text-align: center;
 }
+
+/* About Page */
+
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+h2 span {
+  color: #45ac9d;
+}
+
+.about-page h2 {
+  color: white;
+  font-size: 1.56em;
+  font-weight: 500;
+  font-family: 'Open Sans';
+  line-height: 1.5em;
+  text-align: center;
+  padding-bottom: 4em;
+  padding-top: 1em;
+}
+
+.about-services {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.about-page-content h3{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.03em;
+  font-family: 'Montserrat';
+}
