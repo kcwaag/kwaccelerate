@@ -209,6 +209,25 @@ h2 span {
   color: #45ac9d;
 }
 
+.services {
+  width: 70%;
+  margin: auto;
+}
+
+.our-services h3{
+  text-transform: uppercase;
+  text-align: center;
+  color: #3a3939;
+}
+
+.our-services h4{
+  width: 60%;
+  text-align: center;
+  font-size: 1.03em;
+  margin:auto;
+  color: #3b3b3b;
+}
+
 .about-page h2 {
   color: white;
   font-size: 1.56em;
@@ -222,13 +241,35 @@ h2 span {
 
 .about-services {
   width: 100%;
-  display: block;
-  text-align: center;
 }
 
-.about-page-content h3{
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.03em;
-  font-family: 'Montserrat';
+.service-types {
+  margin: 5% 0 5% 0;
+}
+
+.service-types figure{
+  float: left;
+  margin-right: 5%;
+}
+
+.service-types h2{
+  margin:0;
+}
+
+.service-content{
+  width: 75%;
+  margin: auto;
+}
+
+.contact-us{
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 5%;
+}
+
+.contact-us h2{
+  float: left;
+  margin-right: 4%;
 }

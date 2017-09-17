@@ -24,11 +24,11 @@ get_header(); ?>
 
 <section class="services">
     <div class = "our-services">
-        <h2>Our Services</h2>
+        <h3>Our Services</h3>
           <?php while ( have_posts() ) : the_post();
             $our_services = get_field('our_services'); ?>
 
-            <h3><?php echo $our_services; ?></h3>
+            <h4><?php echo $our_services; ?></h4>
           <?php endwhile; ?>
           <?php wp_reset_query(); ?>
     </div>
@@ -44,15 +44,20 @@ get_header(); ?>
   							<?php echo wp_get_attachment_image($image_1, $size); ?>
   					</figure>
   							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class = "service-content">
                 <?php the_content(); ?>
+            </div>
   							<?php endwhile; ?>
   			  </div>
             <?php wp_reset_query(); ?>
     </div>
 
+
+
     <div class = "contact-us">
             <?php while ( have_posts() ) : the_post();
               $contact_us = get_field('contact_us'); ?>
+
 
                 <h2><?php echo $contact_us; ?></h2>
                 <a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
@@ -61,17 +66,5 @@ get_header(); ?>
             <?php wp_reset_query(); ?>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php get_footer(); ?>
