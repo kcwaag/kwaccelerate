@@ -33,7 +33,7 @@ get_header(); ?>
           <?php wp_reset_query(); ?>
     </div>
 
-    <div class="about-services">
+    <article class="about-services">
           <?php query_posts('posts_per_page=4&post_type=our_services');?>
           <?php while ( have_posts() ) : the_post();
             $image_1 = get_field("image_1");
@@ -50,21 +50,19 @@ get_header(); ?>
   							<?php endwhile; ?>
   			  </div>
             <?php wp_reset_query(); ?>
-    </div>
-
-
+    </article>
 
     <div class = "contact-us">
-            <?php while ( have_posts() ) : the_post();
-              $contact_us = get_field('contact_us'); ?>
+           <?php while ( have_posts() ) : the_post();
+             $contact_us = get_field('contact_us'); ?>
 
 
-                <h2><?php echo $contact_us; ?></h2>
-                <a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
+               <h2><?php echo $contact_us; ?></h2>
+               <a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
 
-            <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
-    </div>
+           <?php endwhile; ?>
+           <?php wp_reset_query(); ?>
+   </div>
 </section>
 
 <?php get_footer(); ?>
