@@ -33,24 +33,28 @@ get_header(); ?>
           <?php wp_reset_query(); ?>
     </div>
 
+
+
     <article class="about-services">
           <?php query_posts('posts_per_page=4&post_type=our_services');?>
           <?php while ( have_posts() ) : the_post();
             $image_1 = get_field("image_1");
             $size = "medium";?>
 
-          <div class="service-types">
-            <figure>
-  							<?php echo wp_get_attachment_image($image_1, $size); ?>
-  					</figure>
-  							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <div class = "service-content">
-                <?php the_content(); ?>
-            </div>
-  							<?php endwhile; ?>
-  			  </div>
+            <section class="service-types">
+              <figure>
+    							<?php echo wp_get_attachment_image($image_1, $size); ?>
+    					</figure>
+              <div class = "service-content">
+    							<h2><?php the_title(); ?></a></h2>
+                  <?php the_content(); ?>    
+              </div>
+    			  </section>
+            <?php endwhile; ?>
             <?php wp_reset_query(); ?>
     </article>
+
+
 
     <div class = "contact-us">
            <?php while ( have_posts() ) : the_post();

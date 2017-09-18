@@ -240,7 +240,8 @@ h2 span {
 }
 
 .about-services {
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .service-types {
@@ -252,14 +253,11 @@ h2 span {
   margin-right: 5%;
 }
 
-.service-types h2{
-  margin:0;
+.service-types:nth-child(even) figure{
+  float: right;
+  margin-left: 3%;
 }
 
-.service-content{
-  width: 75%;
-  margin: auto;
-}
 
 .contact-us{
   width: 96%;
