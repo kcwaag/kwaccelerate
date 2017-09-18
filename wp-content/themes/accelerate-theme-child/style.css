@@ -258,7 +258,6 @@ h2 span {
   margin-left: 3%;
 }
 
-
 .contact-us{
   width: 96%;
   display: flex;
@@ -277,4 +276,37 @@ h2 span {
 .contact-us .button{
   height: 100%;
   margin-top: 3%;
+}
+
+/* 404 error page */
+
+.no-page{
+  background: url("img/dead-end-404.jpg") no-repeat scroll;
+  background-size:cover;
+  background-position:center;
+
+}
+
+.no-page h1 span {
+  color: #45ac9d;
+}
+
+.no-page h1{
+  font-weight:normal;
+  line-height: 1.5em;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.no-page h2 a {
+  font-style: italic;
+}
+
+.no-page h2{
+  color: white;
+  margin-left: 0;
+}
+
+.whoops{
+  margin-left: 13%;
 }
