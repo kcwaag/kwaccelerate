@@ -16,6 +16,16 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
+.page-header .primary-navigation{
+  width: 40%;
+  height:auto;
+}
+
+.page-header .primary-navigation li {
+  font-size: .875em;
+  width:20%;
+}
+
 #masthead {
   background: none repeat scroll 0 0 #45ac9d;
 }
@@ -55,6 +65,13 @@
 	font-weight: 700 15px;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/* Twitter homepage sidebar */
+
+#sidebar-2{
+  float: right;
+  width: 44.75%;
 }
 
 /* Homepage Featured Work */
@@ -278,6 +295,28 @@ h2 span {
   margin-top: 3%;
 }
 
+/*footer menu */
+
+.social-media-navigation li{
+  display:block;
+  width: 20%;
+}
+
+.social-media-navigation .fa{
+  color: white;
+  background-color: #3b3b3b;
+  margin-top: 1em;
+}
+
+.menu-item i._mi {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
 /* 404 error page */
 
 .no-page{
@@ -289,6 +328,10 @@ h2 span {
 
 .no-page h1 span {
   color: #45ac9d;
+}
+
+.no-page h1 strong {
+  font-family: 'Londrina Solid';
 }
 
 .no-page h1{
