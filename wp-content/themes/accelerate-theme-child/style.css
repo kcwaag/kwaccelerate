@@ -104,6 +104,15 @@
 	text-transform: uppercase;
 }
 
+/* Blog Page sidebar */
+#sidebar input[type="submit"] {
+  background: #45ac9d;
+}
+
+#sidebar .aside{
+  margin: 1em 0;
+}
+
 /* Homepage Featured Work */
 
 .featured-work h4 {
