@@ -50,6 +50,7 @@ get_header(); ?>
 		<div class="site-content">
 		<div class="blog-post">
 			<h4>From the Blog</h4>
+
 	<!--QUERY FOR MOST RECENT BLOG POST -->
 	<?php query_posts('posts_per_page=1'); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -58,13 +59,21 @@ get_header(); ?>
 		<?php endwhile; ?>
 	<?php wp_reset_query(); ?>
 		</div>
+		<!--Dynamic sidebar *twitter* -->
+	<div class="twitter-feed">
+		<h4>Recent Posts</h4>
+	 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			 <div id="secondary" class="widget-area" role="complementary">
+		 <?php dynamic_sidebar( 'sidebar-2' ); ?>
+			 </div>
+	 <?php endif; ?>
+	 <div class="follow-us">
+		 <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A8888%2Faccelerate-kcwaag%2F&ref_src=twsrc%5Etfw&screen_name=mkwaag&tw_p=followbutton"><span>Follow Us ›</span></a>
+	 </div>
+ 			</div>
 		</div>
 	</section>
 
-<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-2' ); ?>
-		</div>
-<?php endif; ?>
+
 
 <?php get_footer(); ?>

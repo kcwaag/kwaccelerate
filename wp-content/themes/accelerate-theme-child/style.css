@@ -69,9 +69,39 @@
 
 /* Twitter homepage sidebar */
 
-#sidebar-2{
-  float: right;
-  width: 44.75%;
+.twitter-feed{
+	width: 44.75%;
+  padding-left: 50px;
+}
+
+.twitter-feed ul.tweets  {
+  list-style: none;
+  margin: 0;
+  text-align: justify;
+}
+
+.twitter-feed ul.tweets li{
+  width: 100%;
+}
+
+.twitter-feed h3{
+  margin: 36px 0;
+  font-weight:500;
+  font-size: 1.45em;
+}
+
+.twitter-feed h4 {
+    font: 16px 'Montserrat';
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.twitter-feed .follow-us span{
+  font-family: 'Montserrat';
+	font-weight: 700 15px;
+	color: #45ac9d;
+	text-transform: uppercase;
 }
 
 /* Homepage Featured Work */
